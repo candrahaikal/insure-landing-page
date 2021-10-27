@@ -23,6 +23,7 @@ header{
   top: 0;
   left: 0;
   background-color: white;
+  box-shadow: 0 0 35px rgba(0,0,0,.2);
 }
 nav{
   display: flex;
@@ -37,7 +38,12 @@ nav{
   margin-left: 20px;
   text-decoration: none;
   font-weight: 700;
-  opacity: .72;
+  opacity: .5;
+  color: rgb(36, 36, 36);
+  transition: .2s;
+}
+.nav-link:hover{
+  opacity: 1;
 }
 .btn-view-plans{
   display: inline-block;
@@ -46,6 +52,12 @@ nav{
   margin-left: 20px;
   text-decoration: none;
   font-weight: 700;
+  color: #333;
+  transition: .2s;
+}
+.btn-view-plans:hover{
+  background-color: #333;
+  color: white;
 }
 .logo{
   font-family: Krona One;
@@ -115,6 +127,10 @@ nav{
   border: 3px solid white;
   color: white;
 }
+#hero .btn-view-plans:hover{
+  color: hsl(256, 26%, 20%);
+  background-color: white;
+}
 .hero-right-col{
   min-height: 700px;
   width: 45%;
@@ -174,6 +190,10 @@ nav{
   font-size: 1.4rem;
   font-weight: 400;
 }
+#more-work .btn-view-plans:hover{
+  color: hsl(256, 26%, 20%);
+  background-color: white;
+}
 
 /* footer */
 .footer-top{
@@ -181,6 +201,12 @@ nav{
   justify-content: space-between;
   border-bottom: 2px solid rgb(190, 189, 189);
   padding-bottom: 25px;
+}
+.social-media-link{
+  opacity: .5;
+}
+.social-media-link:hover{
+  opacity: 1;
 }
 .footer-bottom{
   display: flex;
@@ -202,6 +228,9 @@ nav{
   font-weight: 700;
   color: #333;
   margin-bottom: 10px;
+}
+.footer-card-link:hover{
+  text-decoration: underline;
 }
 
 .attribution { font-size: 11px; text-align: center; margin-bottom: 40px;}
@@ -244,13 +273,14 @@ nav{
     margin: 40px 0;
     font-size: 1.4rem;
     opacity: 1;
-    color: cornsilk;
+    color: white;
   }
   .nav-links .btn-view-plans{
     border: 2px solid white;
     font-size: 1.4rem;
     color: white;
     padding: 13px 20px;
+    margin-left: 0;
   }
   .hide{
     display: block;
@@ -328,7 +358,7 @@ nav{
     margin-bottom: 30px;
   }
   #more-work .btn-view-plans{
-    margin: 0;
+    margin-left: 0;
   }
 
   /* foter */
